@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 /**
  * 
  * @author vocal
@@ -47,10 +46,10 @@ public class CustomerController {
 	public ResponseEntity<Customer> create(@RequestBody CustomerDTO customerDTO) {
 		logger.info("Create customer");
 		Customer customer = customerService.save(Utils.convertToEntity(customerDTO));
-		
-        if (customer == null) {
-            throw new CustomerCreateException("Customer not created");
-        }
+
+		if (customer == null) {
+			throw new CustomerCreateException("Customer not created");
+		}
 		logger.info("customer created:" + "id" + customer.getId());
 		return new ResponseEntity<Customer>(customer, HttpStatus.CREATED);
 	}
@@ -66,13 +65,11 @@ public class CustomerController {
 	}
 
 	@Operation(summary = "Delete Customer")
-	@DeleteMapping(path = "/{id}", produces = {
-			MediaType.APPLICATION_JSON_VALUE })
+	@DeleteMapping(path = "/{id}", produces = { MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<Void> delete(@PathVariable Long id) {
 		logger.info("delete customer");
 		customerService.delete(id);
 		return ResponseEntity.noContent().build();
 	}
-
 
 }
