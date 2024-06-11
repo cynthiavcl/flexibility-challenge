@@ -74,7 +74,7 @@
   <classpathentry kind="var" path="M2_REPO/net/minidev/json-smart/2.3/json-smart-2.3.jar" sourcepath="M2_REPO/net/minidev/json-smart/2.3/json-smart-2.3-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar" sourcepath="M2_REPO/net/minidev/accessors-smart/1.2/accessors-smart-1.2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" sourcepath="M2_REPO/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar" sourcepath="M2_REPO/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar" sourcepath="M2_REPO/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/hibernate/hibernate-jpamodelgen/5.4.21.Final/hibernate-jpamodelgen-5.4.21.Final.jar" sourcepath="M2_REPO/org/hibernate/hibernate-jpamodelgen/5.4.21.Final/hibernate-jpamodelgen-5.4.21.Final-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar" sourcepath="M2_REPO/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/29.0-jre/guava-29.0-jre.jar" sourcepath="M2_REPO/com/google/guava/guava/29.0-jre/guava-29.0-jre-sources.jar"/>

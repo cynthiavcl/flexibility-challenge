@@ -8,12 +8,14 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-      url: jdbc:mysql://127.0.0.1:3306/payments?zeroDateTimeBehavior=convertToNull
-      username: root
-      password: mysql
+      url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:payments}?zeroDateTimeBehavior=convertToNull
+      username: ${MYSQL_USERNAME:root}
+      password: ${MYSQL_PASSWORD:mysql}
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  
 
 server:
-  port: 8080
+  port: ${SERVER_PORT:8080}
   servlet:
     context-path: '/payments'
 ---

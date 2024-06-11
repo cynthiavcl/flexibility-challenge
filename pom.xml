@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ar.com.plug</groupId>
-    <artifactId>examen-cyn-vocal</artifactId>
+    <artifactId>examenCynVocal</artifactId>
     <version>0.0.1</version>
 
     <name>examen</name>
@@ -62,7 +62,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <version>8.0.33</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
