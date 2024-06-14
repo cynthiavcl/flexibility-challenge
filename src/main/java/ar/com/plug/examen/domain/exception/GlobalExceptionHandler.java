@@ -40,17 +40,17 @@ public class GlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(CustomerUpdateException.class)
-	public ResponseEntity<String> handleCustomerUpdateException(ProductUpdateException e) {
+	public ResponseEntity<String> handleCustomerUpdateException(CustomerCreateException e) {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Customer not updated: " + e.getMessage());
 	}
 
 	@ExceptionHandler(CustomerCreateException.class)
-	public ResponseEntity<String> handleCustomerCreateException(ProductCreateException e) {
+	public ResponseEntity<String> handleCustomerCreateException(CustomerCreateException e) {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Customer not created: " + e.getMessage());
 	}
 
 	@ExceptionHandler(CustomerDeleteException.class)
-	public ResponseEntity<String> handleCustomerDeleteException(ProductDeleteException e) {
+	public ResponseEntity<String> handleCustomerDeleteException(CustomerDeleteException e) {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Customer not deletec: " + e.getMessage());
 	}
 	
